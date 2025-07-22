@@ -1,7 +1,7 @@
 title: Portafolio de Majo
 description: "Portafolio profesional de Majo Infante: bases de datos, automatización y desarrollo backend."
 url: "https://majo-xlsx.github.io"
-baseurl: "/Portafolio"  # si tu repo se llama 'Portafolio'
+baseurl: "/Portafolio"
 
 remote_theme: "mmistakes/minimal-mistakes@4.27.2"
 
@@ -37,17 +37,14 @@ author:
   name: "Majo Infante"
   bio: "Matemática en formación. Bases de datos, automatización y backend."
   location: "Colombia"
-  email: "tu_correo@gmail.com"
+  email: "mainfantea@unal.edu.co"
   links:
     - label: "GitHub"
       icon: "fab fa-github"
       url: "https://github.com/Majo-xlsx"
     - label: "LinkedIn"
       icon: "fab fa-linkedin"
-      url: "https://linkedin.com/in/majo-infante"
-
-# Diseño
-logo: "/assets/logo.png"  # Opcional: reemplázalo con tu logo si tienes uno
+      url: "www.linkedin.com/in/majo-xlsx"
 
 # SEO
 seo:
