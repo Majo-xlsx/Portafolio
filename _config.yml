@@ -1,2 +1,56 @@
 title: Portafolio de Majo
-theme: minima
+description: "Portafolio profesional de Majo Infante: bases de datos, automatización y desarrollo backend."
+url: "https://majo-xlsx.github.io"
+baseurl: "/Portafolio"  # si tu repo se llama 'Portafolio'
+
+remote_theme: "mmistakes/minimal-mistakes@4.27.2"
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-include-cache
+
+markdown: kramdown
+highlighter: rouge
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: false
+
+# Navegación principal
+header_pages:
+  - index.md
+  - about.md
+  - portafolio.md
+  - cv.md
+
+# Datos del autor
+author:
+  name: "Majo Infante"
+  bio: "Matemática en formación. Bases de datos, automatización y backend."
+  location: "Colombia"
+  email: "tu_correo@gmail.com"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/Majo-xlsx"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://linkedin.com/in/majo-infante"
+
+# Diseño
+theme: minimal-mistakes-jekyll
+logo: "/assets/logo.png"  # Opcional: reemplázalo con tu logo si tienes uno
+
+# SEO
+seo:
+  type: "Person"
+  name: "Majo Infante"
