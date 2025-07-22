@@ -27,7 +27,7 @@ defaults:
 
 # Navegación principal
 header_pages:
-  - index.md
+  - index.html
   - about.md
   - portafolio.md
   - cv.md
