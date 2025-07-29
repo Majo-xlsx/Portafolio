@@ -1,97 +1,254 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="dark">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portafolio de Majo Infante</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Majo Infante | Portafolio</title>
+
+  <!-- Tailwind CSS y Tipografía -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+
   <style>
     body {
       font-family: 'Inter', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f8f8f8;
-      color: #111;
-      line-height: 1.6;
     }
-    header {
-      background-color: #111;
-      color: #fff;
-      padding: 2rem 1.5rem;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    nav {
-      margin-top: 1rem;
-    }
-    nav a {
-      color: #bbb;
-      text-decoration: none;
-      margin: 0 1rem;
-      font-size: 1rem;
-    }
-    nav a:hover {
-      color: #fff;
-    }
-    main {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1.5rem;
-    }
-    section {
-      margin-bottom: 2rem;
-    }
-    h2 {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 0.5rem;
-    }
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    ul li {
-      margin-bottom: 0.5rem;
+    html {
+      scroll-behavior: smooth;
     }
   </style>
 </head>
-<body>
-  <header>
-    <h1>Majo Infante</h1>
-    <p>Matemática en formación | Bases de datos | Full-Stack Java</p>
-    <nav>
-      <a href="about.md">Sobre mí</a>
-      <a href="portafolio.md">Proyectos</a>
-      <a href="cv.md">CV</a>
-    </nav>
+
+<body class="bg-white dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100">
+
+  <!-- Header -->
+  <header class="sticky top-0 w-full px-6 py-4 bg-white dark:bg-neutral-900 shadow z-50">
+    <div class="max-w-2xl mx-auto flex justify-between items-center">
+      <h1 class="text-xl font-bold">Majo Infante</h1>
+      <nav class="space-x-4 text-sm">
+        <a href="_pages/about.html" class="hover:underline">Sobre mí</a>
+        <a href="_pages/portafolio.html" class="hover:underline">Proyectos</a>
+        <a href="majo-cv.pdf" class="hover:underline" target="_blank" rel="noopener">CV</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section>
-      <h2>Bienvenida</h2>
-      <p>Hola, soy Majo. Estudio Matemáticas y me interesa cómo la lógica y las estructuras formales pueden aplicarse al diseño de bases de datos y al análisis estructurado de la información.
-      <p>Tengo experiencia profesional en automatización de procesos administrativos, migración y limpieza de datos, así como en diseño de bases relacionales (PostgreSQL, Oracle), cuidando aspectos como integridad, normalización y consistencia histórica.</p>
-      <p>Actualmente me estoy formando como desarrolladora Java Full-Stack, y disfruto aprender nuevos lenguajes como R, Julia o Haskell, especialmente cuando aportan perspectivas distintas para razonar con datos..</p>
+  <!-- Main -->
+  <main class="max-w-2xl mx-auto pt-10 px-4 sm:px-6 lg:px-8">
+    
+    <!-- Perfil -->
+    <section id="profile" class="prose dark:prose-invert prose-sm leading-6 mb-10">
+      <h2>Bienvenidx</h2>
+      <p>Hola, soy Majo. Estudio Matemáticas y me interesa cómo la lógica y las estructuras formales pueden aplicarse al diseño de bases de datos y al análisis estructurado de la información.</p>
+      <p>Tengo experiencia profesional en automatización de procesos administrativos, migración y limpieza de datos, así como en diseño de bases relacionales, cuidando aspectos como integridad, normalización y consistencia histórica.</p>
+      <p>Actualmente me estoy formando como desarrolladora Full-Stack Java, y disfruto aprender nuevos lenguajes como R, Julia o Haskell, especialmente cuando aportan perspectivas distintas para razonar con datos.</p>
     </section>
 
-    <section>
-      <h2>Explorando...</h2>
-      <p>Me interesa seguir creciendo en áreas como:</p>
-      <ul>
-        <li>Simulación y visualización matemática (Python, Matplotlib, SciPy)</li>
-        <li>Lenguajes especializados: R, Julia, Haskell, Fortran, MATLAB, Elixir</li>
-        <li>Lógica aplicada al desarrollo backend</li>
+    <!-- Habilidades -->
+    <section id="skills" class="mt-12">
+      <h2 class="mb-5 font-medium text-gray-800 dark:text-neutral-200 text-lg">Habilidades</h2>
+      <div class="space-y-6 text-sm">
+
+        <!-- Lenguajes -->
+        <div>
+          <h3 class="text-gray-500 dark:text-neutral-400 mb-2 text-sm font-light">Lenguajes de programación</h3>
+          <ul class="flex flex-wrap gap-2">
+            <li class="flex items-center gap-1 px-2 py-1 border rounded-md text-xs bg-white dark:bg-neutral-900 border-gray-300 dark:border-neutral-700 shadow-sm">
+              <span class="iconify" data-icon="logos:python" style="font-size: 1rem;"></span> Python
+            </li>
+            <li class="flex items-center gap-1 px-2 py-1 border rounded-md text-xs bg-white dark:bg-neutral-900 border-gray-300 dark:border-neutral-700 shadow-sm">
+              <span class="iconify" data-icon="logos:r-lang" style="font-size: 1rem;"></span> R
+            </li>
+            <li class="flex items-center gap-1 px-2 py-1 border rounded-md text-xs bg-white dark:bg-neutral-900 border-gray-300 dark:border-neutral-700 shadow-sm">
+              <span class="iconify" data-icon="logos:java" style="font-size: 1rem;"></span> Java
+            </li>
+            <li class="flex items-center gap-1 px-2 py-1 border rounded-md text-xs bg-white dark:bg-neutral-900 border-gray-300 dark:border-neutral-700 shadow-sm">
+              <span class="iconify" data-icon="logos:javascript" style="font-size: 1rem;"></span> JavaScript
+            </li>
+          </ul>
+        </div>
+
+        <!-- Herramientas -->
+        <div>
+          <h3 class="text-gray-500 dark:text-neutral-400 mb-2 text-sm font-light">Herramientas y frameworks</h3>
+          <ul class="flex flex-wrap gap-2">
+            <li class="flex items-center gap-1 px-2 py-1 border rounded-md text-xs bg-white dark:bg-neutral-900 border-gray-300 dark:border-neutral-700 shadow-sm">
+              <span style="width: 1rem; height: 1rem; display: inline-block;">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor">
+                  <rect width="256" height="256" fill="#f03c2e" rx="60"/>
+                  <g clip-path="url(#skillIconsGit0)">
+                    <path fill="#fff" d="m224.225 119.094l-87.319-87.319a12.87 12.87 0 0 0-14.035-2.793a12.9 12.9 0 0 0-4.177 2.793L100.569 49.9l23 23c5.35-1.875 11.475-.594 15.737 3.669a15.31 15.31 0 0 1 3.631 15.831l22.169 22.169c5.363-1.85 11.55-.657 15.831 3.637a15.32 15.32 0 0 1 3.321 16.706a15.333 15.333 0 0 1-20.029 8.293c-1.86-.771-3.55-1.9-4.973-3.324c-4.5-4.5-5.612-11.125-3.337-16.669l-20.675-20.675v54.407a15.6 15.6 0 0 1 4.062 2.9a15.326 15.326 0 0 1-21.675 21.675a15.32 15.32 0 0 1-3.326-16.704a15.3 15.3 0 0 1 3.326-4.971c1.481-1.475 3.125-2.594 5.019-3.344v-54.913a15.2 15.2 0 0 1-5.019-3.343a15.315 15.315 0 0 1-3.3-16.757L91.644 58.814l-59.875 59.812a12.88 12.88 0 0 0-2.795 14.04a12.9 12.9 0 0 0 2.795 4.179l87.325 87.312a12.9 12.9 0 0 0 4.177 2.793a12.9 12.9 0 0 0 9.858 0a12.9 12.9 0 0 0 4.177-2.793l86.919-86.781a12.88 12.88 0 0 0 3.776-9.109a12.88 12.88 0 0 0-3.776-9.11"/>
+                  </g>
+                  <defs>
+                    <clipPath id="skillIconsGit0">
+                      <path fill="#fff" d="M28 28h200v200H28z"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+              </span>
+              Git
+            </li>
+            <li class="flex items-center gap-1 px-2 py-1 border rounded-md text-xs bg-white dark:bg-neutral-900 border-gray-300 dark:border-neutral-700 shadow-sm">
+              <span style="width: 1rem; height: 1rem; display: inline-block;">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor">
+                  <rect width="256" height="256" fill="#f4f2ed" rx="60"/>
+                  <path fill="#161614" d="M128.001 30C72.779 30 28 74.77 28 130.001c0 44.183 28.653 81.667 68.387 94.89c4.997.926 6.832-2.169 6.832-4.81c0-2.385-.093-10.262-.136-18.618c-27.82 6.049-33.69-11.799-33.69-11.799c-4.55-11.559-11.104-14.632-11.104-14.632c-9.073-6.207.684-6.079.684-6.079c10.042.705 15.33 10.305 15.33 10.305c8.919 15.288 23.394 10.868 29.1 8.313c.898-6.464 3.489-10.875 6.349-13.372c-22.211-2.529-45.56-11.104-45.56-49.421c0-10.918 3.906-19.839 10.303-26.842c-1.039-2.519-4.462-12.69.968-26.464c0 0 8.398-2.687 27.508 10.25c7.977-2.215 16.531-3.326 25.03-3.364c8.498.038 17.06 1.149 25.051 3.365c19.087-12.939 27.473-10.25 27.473-10.25c5.443 13.773 2.019 23.945.98 26.463c6.412 7.003 10.292 15.924 10.292 26.842c0 38.409-23.394 46.866-45.662 49.341c3.587 3.104 6.783 9.189 6.783 18.519c0 13.38-.116 24.149-.116 27.443c0 2.661 1.8 5.779 6.869 4.797C199.383 211.64 228 174.169 228 130.001C228 74.771 183.227 30 128.001 30"/>
+                </svg>
+              </span>
+              GitHub
+            </li>
+            <li class="flex items-center gap-1 px-2 py-1 border rounded-md text-xs bg-white dark:bg-neutral-900 border-gray-300 dark:border-neutral-700 shadow-sm">
+              <img src="https://cdn-icons-png.flaticon.com/512/2965/2965300.png" alt="Apps Script logo" style="width: 1rem; height: 1rem;"> Apps Script
+            </li>
+            <li class="flex items-center gap-1 px-2 py-1 border rounded-md text-xs bg-white dark:bg-neutral-900 border-gray-300 dark:border-neutral-700 shadow-sm">
+              <span class="iconify" data-icon="logos:latex" style="font-size: 1rem;"></span> LaTeX
+            </li>
+            <li class="flex items-center gap-1 px-2 py-1 border rounded-md text-xs bg-white dark:bg-neutral-900 border-gray-300 dark:border-neutral-700 shadow-sm">
+              <span class="iconify" data-icon="devicon:matlab" style="font-size: 1rem;"></span> MATLAB
+            </li>
+          </ul>
+        </div>
+
+        <!-- Bases de datos -->
+        <div>
+          <h3 class="text-gray-500 dark:text-neutral-400 mb-2 text-sm font-light">Bases de datos</h3>
+          <ul class="flex flex-wrap gap-2">
+            <li class="flex items-center gap-1 px-2 py-1 border rounded-md text-xs bg-white dark:bg-neutral-900 border-gray-300 dark:border-neutral-700 shadow-sm">
+              <span class="iconify" data-icon="logos:postgresql" style="font-size: 1rem;"></span> PostgreSQL
+            </li>
+            <li class="flex items-center gap-1 px-2 py-1 border rounded-md text-xs bg-white dark:bg-neutral-900 border-gray-300 dark:border-neutral-700 shadow-sm">
+              <span class="iconify" data-icon="logos:mysql" style="font-size: 1rem;"></span> MySQL
+            </li>
+          </ul>
+        </div>
+
+        <!-- Matemáticas -->
+        <div>
+          <h3 class="text-gray-500 dark:text-neutral-400 mb-2 text-sm font-light">Matemáticas</h3>
+          <ul class="flex flex-wrap gap-2">
+            <li class="flex items-center gap-1 px-2 py-1 border rounded-md text-xs font-mono bg-white dark:bg-neutral-900 border-gray-300 dark:border-neutral-700 shadow-sm">
+              <span class="iconify" data-icon="mdi:set-all" style="font-size: 1rem;"></span> Teoría de conjuntos
+            </li>
+            <li class="flex items-center gap-1 px-2 py-1 border rounded-md text-xs font-mono bg-white dark:bg-neutral-900 border-gray-300 dark:border-neutral-700 shadow-sm">
+              <span class="iconify" data-icon="mdi:numeric" style="font-size: 1rem;"></span> Sistemas numéricos
+            </li>
+            <li class="flex items-center gap-1 px-2 py-1 border rounded-md text-xs font-mono bg-white dark:bg-neutral-900 border-gray-300 dark:border-neutral-700 shadow-sm">
+              <span class="iconify" data-icon="ph:chart-bar" style="font-size: 1rem;"></span> Probabilidad
+            </li>
+            <li class="flex items-center gap-1 px-2 py-1 border rounded-md text-xs font-mono bg-white dark:bg-neutral-900 border-gray-300 dark:border-neutral-700 shadow-sm">
+              <span class="iconify" data-icon="mdi:graph-outline" style="font-size: 1rem;"></span> Combinatoria
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Educación -->
+    <section class="mt-10 sm:mt-14 scroll-mt-28" id="edu">
+      <h2 class="mb-3 font-medium text-gray-800 dark:text-neutral-200">Educación</h2>
+      <div class="grid grid-cols-1 gap-3">
+
+        <!-- Bootcamp Generation -->
+        <div class="p-4 border border-gray-200 rounded-lg dark:border-neutral-700">
+          <div class="flex items-center gap-4">
+            <img src="assets/img/gen.png" alt="Logo Generation"
+                class="object-cover rounded-md"
+                style="width: 4rem; height: 4rem;" />
+            <div>
+              <p class="mb-1 text-xs text-gray-600 dark:text-neutral-400">
+                Junio 2025 - Septiembre 2025
+              </p>
+              <h3 class="font-semibold text-sm text-gray-800 dark:text-neutral-200">
+                Bootcamp Desarrollo Full-Stack Java
+              </h3>
+              <p class="mt-1 text-sm text-gray-600 dark:text-neutral-400">
+                Generation Colombia (Virtual)
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- UNAL -->
+        <div class="p-4 border border-gray-200 rounded-lg dark:border-neutral-700 flex items-start gap-3">
+          <img src="assets/img/unal.jpg" alt="Logo UNAL"
+              class="object-cover rounded-md"
+              style="width: 4rem; height: 4rem;"/>
+          <div>
+            <p class="mb-1 text-xs text-gray-600 dark:text-neutral-400">Ago 2023 - Actualidad</p>
+            <h3 class="font-semibold text-sm text-gray-800 dark:text-neutral-200">
+              Pregrado en Matemáticas
+            </h3>
+            <p class="mt-1 text-sm text-gray-600 dark:text-neutral-400">
+              Universidad Nacional de Colombia
+            </p>
+          </div>
+        </div>
+
+        <!-- Coursera -->
+        <div class="p-4 border border-gray-200 rounded-lg dark:border-neutral-700">
+          <hgroup>
+            <p class="mb-1 text-xs text-gray-600 dark:text-neutral-400">
+              Febrero 2024 – Julio 2025
+            </p>
+            <h3 class="font-semibold text-sm text-gray-800 dark:text-neutral-200">
+              Cursos en bases de datos y algoritmos
+            </h3>
+            <p class="mt-1 text-sm text-gray-600 dark:text-neutral-400">
+              Coursera (University of Colorado Boulder & Princeton University)
+            </p>
+            <ul class="list-disc pl-5 mt-2 text-sm text-gray-600 dark:text-neutral-400">
+              <li>Relational Database Design</li>
+              <li>SQL (Structured Query Language)</li>
+              <li>Advanced Topics in DB Technologies</li>
+              <li>Algorithms, Theory and Machines</li>
+              <li>Algorithms, Part I</li>
+            </ul>
+          </hgroup>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contact" class="mt-12">
+      <h2 class="text-lg font-semibold mb-4">Contacto</h2>
+      <ul class="mt-5 flex flex-col gap-y-3 text-gray-500 dark:text-neutral-500 text-sm">
+        <li class="flex items-center gap-x-2.5">
+          <span class="iconify inline-block" data-icon="lucide:mail" style="font-size: 1.1rem;"></span>
+          <a href="mailto:mainfantea@unal.edu.co" target="_blank" rel="noopener"
+             class="inline-flex items-center gap-x-1 underline hover:text-gray-800 hover:decoration-2 focus:outline-none focus:decoration-2 dark:hover:text-neutral-400">
+            <span>mainfantea@unal.edu.co</span>
+            <span class="iconify" data-icon="lucide:external-link" style="font-size: 0.9rem;"></span>
+          </a>
+        </li>
+
+        <li class="flex items-center gap-x-2.5">
+          <span class="iconify inline-block" data-icon="mdi:linkedin" style="font-size: 1.1rem;"></span>
+          <a href="https://www.linkedin.com/in/majo-xlsx/" target="_blank" rel="noopener noreferrer"
+             class="inline-flex items-center gap-x-1 underline hover:text-gray-800 hover:decoration-2 focus:outline-none focus:decoration-2 dark:hover:text-neutral-400">
+            <span>/majo-xlsx</span>
+            <span class="iconify" data-icon="lucide:external-link" style="font-size: 0.9rem;"></span>
+          </a>
+        </li>
+
+        <li class="flex items-center gap-x-2.5">
+          <span class="iconify inline-block" data-icon="mdi:github" style="font-size: 1.1rem;"></span>
+          <a href="https://github.com/Majo-xlsx" target="_blank" rel="noopener"
+             class="inline-flex items-center gap-x-1 underline hover:text-gray-800 hover:decoration-2 focus:outline-none focus:decoration-2 dark:hover:text-neutral-400">
+            <span>@Majo-xlsx</span>
+            <span class="iconify" data-icon="lucide:external-link" style="font-size: 0.9rem;"></span>
+          </a>
+        </li>
       </ul>
     </section>
-
-    <section>
-      <h2>Contacto</h2>
-      <p>Puedes ver más de mi trabajo en mi <a href="https://github.com/Majo-xlsx" target="_blank">GitHub</a> o escribirme a mainfantea@unal.edu.co.</p>
-    </section>
   </main>
+
+  <!-- Footer -->
+  <footer class="w-full max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 mt-16 text-sm text-neutral-500 dark:text-neutral-400 text-center">
+    <p>© 2025 Majo Infante</p>
+    Icono de Apps Script diseñado por <a href="https://www.flaticon.com/authors/freepik" class="underline hover:text-gray-600" target="_blank" rel="noopener">Freepik</a> en <a href="https://www.flaticon.com/" class="underline hover:text-gray-600" target="_blank" rel="noopener">Flaticon</a>.
+  </footer>
 </body>
 </html>
