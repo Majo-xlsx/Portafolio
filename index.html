@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Majo Infante | Portafolio</title>
 
-  <!-- Tailwind CSS y Tipografía -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
@@ -20,37 +19,41 @@
   </style>
 </head>
 
-<body class="bg-white dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100">
+<body class="bg-gray-100 dark:bg-neutral-800 text-neutral-900 dark:text-neutral-100">
 
-  <!-- Header -->
-  <header class="sticky top-0 w-full px-6 py-4 bg-white dark:bg-neutral-900 shadow z-50">
-    <div class="max-w-2xl mx-auto flex justify-between items-center">
-      <h1 class="text-xl font-bold">Majo Infante</h1>
-      <nav class="space-x-4 text-sm">
-        <a href="_pages/about.html" class="hover:underline">Sobre mí</a>
-        <a href="_pages/portafolio.html" class="hover:underline">Proyectos</a>
-        <a href="majo-cv.pdf" class="hover:underline" target="_blank" rel="noopener">CV</a>
-      </nav>
-    </div>
-  </header>
+    <header class="sticky top-0 w-full px-6 py-4 bg-white dark:bg-neutral-900 shadow z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-2xl mx-auto flex justify-between items-center">
+          <a class="flex-none text-xl font-bold dark:text-white flex items-center" href="#" aria-label="Brand">
+            <div id="profile-display" class="flex items-center space-x-4 transition-all duration-300">
+              <img id="profile-img" src="assets/img/Majo.jpg" alt="Foto de Majo Infante" class="h-24 w-24 rounded-full object-cover transition-all duration-300"> 
+              
+              <div id="name-container" class="flex flex-col items-start justify-center"> 
+                <span id="main-name">Majo Infante</span> 
+                <span id="subtitle" class="text-sm font-normal text-gray-500 dark:text-neutral-400 transition-opacity duration-300">Matemática - Desarrolladora Java</span>
+              </div>
+            </div>
+          </a>
+          
+          <nav class="space-x-4 text-sm">
+            <a href="_pages/portafolio.html" class="hover:underline">Proyectos</a>
+            <a href="majo-cv.pdf" class="hover:underline" target="_blank" rel="noopener">CV</a>
+          </nav>
+        </div>
+    </header>
 
-  <!-- Main -->
-  <main class="max-w-2xl mx-auto pt-10 px-4 sm:px-6 lg:px-8">
+  <main class="max-w-[700px] mx-auto pt-10 px-4 sm:px-6 lg:px-10 bg-white dark:bg-neutral-900 pb-8">
     
-    <!-- Perfil -->
     <section id="profile" class="prose dark:prose-invert prose-sm leading-6 mb-10">
-      <h2>Bienvenidx</h2>
-      <p>Hola, soy Majo. Estudio Matemáticas y me interesa cómo la lógica y las estructuras formales pueden aplicarse al diseño de bases de datos y al análisis estructurado de la información.</p>
-      <p>Tengo experiencia profesional en automatización de procesos administrativos, migración y limpieza de datos, así como en diseño de bases relacionales, cuidando aspectos como integridad, normalización y consistencia histórica.</p>
-      <p>Actualmente me estoy formando como desarrolladora Full-Stack Java, y disfruto aprender nuevos lenguajes como R, Julia o Haskell, especialmente cuando aportan perspectivas distintas para razonar con datos.</p>
+      <h2 class="mb-5 font-medium text-gray-800 dark:text-neutral-200 text-lg">Bienvenidx</h2>
+      <p class="text-xs sm:text-sm">Hola, soy Majo. Estudio Matemáticas y me interesa cómo la lógica y las estructuras formales pueden aplicarse al diseño de bases de datos y al análisis estructurado de la información.</p>
+      <p class="text-xs sm:text-sm">Tengo experiencia profesional en automatización de procesos administrativos, migración y limpieza de datos, así como en diseño de bases relacionales, cuidando aspectos como integridad, normalización y consistencia histórica.</p>
+      <p class="text-xs sm:text-sm">Actualmente me estoy formando como desarrolladora Full-Stack Java, y disfruto aprender nuevos lenguajes como R, Julia o Haskell, especialmente cuando aportan perspectivas distintas para razonar con datos.</p>
     </section>
 
-    <!-- Habilidades -->
     <section id="skills" class="mt-12">
       <h2 class="mb-5 font-medium text-gray-800 dark:text-neutral-200 text-lg">Habilidades</h2>
       <div class="space-y-6 text-sm">
 
-        <!-- Lenguajes -->
         <div>
           <h3 class="text-gray-500 dark:text-neutral-400 mb-2 text-sm font-light">Lenguajes de programación</h3>
           <ul class="flex flex-wrap gap-2">
@@ -69,7 +72,6 @@
           </ul>
         </div>
 
-        <!-- Herramientas -->
         <div>
           <h3 class="text-gray-500 dark:text-neutral-400 mb-2 text-sm font-light">Herramientas y frameworks</h3>
           <ul class="flex flex-wrap gap-2">
@@ -110,7 +112,6 @@
           </ul>
         </div>
 
-        <!-- Bases de datos -->
         <div>
           <h3 class="text-gray-500 dark:text-neutral-400 mb-2 text-sm font-light">Bases de datos</h3>
           <ul class="flex flex-wrap gap-2">
@@ -123,7 +124,6 @@
           </ul>
         </div>
 
-        <!-- Matemáticas -->
         <div>
           <h3 class="text-gray-500 dark:text-neutral-400 mb-2 text-sm font-light">Matemáticas</h3>
           <ul class="flex flex-wrap gap-2">
@@ -145,12 +145,10 @@
       </div>
     </section>
 
-    <!-- Educación -->
     <section class="mt-10 sm:mt-14 scroll-mt-28" id="edu">
-      <h2 class="mb-3 font-medium text-gray-800 dark:text-neutral-200">Educación</h2>
+      <h2 class="mb-3 font-medium text-gray-800 dark:text-neutral-200 text-lg">Educación</h2>
       <div class="grid grid-cols-1 gap-3">
 
-        <!-- Bootcamp Generation -->
         <div class="p-4 border border-gray-200 rounded-lg dark:border-neutral-700">
           <div class="flex items-center gap-4">
             <img src="assets/img/gen.png" alt="Logo Generation"
@@ -170,7 +168,6 @@
           </div>
         </div>
 
-        <!-- UNAL -->
         <div class="p-4 border border-gray-200 rounded-lg dark:border-neutral-700 flex items-start gap-3">
           <img src="assets/img/unal.jpg" alt="Logo UNAL"
               class="object-cover rounded-md"
@@ -186,7 +183,6 @@
           </div>
         </div>
 
-        <!-- Coursera -->
         <div class="p-4 border border-gray-200 rounded-lg dark:border-neutral-700">
           <hgroup>
             <p class="mb-1 text-xs text-gray-600 dark:text-neutral-400">
@@ -250,7 +246,6 @@
       </div>
     </section>
 
-    <!-- Contacto -->
     <section id="contact" class="mt-12">
       <h2 class="text-lg font-semibold mb-4">Contacto</h2>
       <ul class="mt-5 flex flex-col gap-y-3 text-gray-500 dark:text-neutral-500 text-sm">
@@ -284,25 +279,30 @@
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="w-full max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 mt-16 text-sm text-neutral-500 dark:text-neutral-400 text-center space-y-1">
-    <p>© 2025 Majo Infante</p>
+  <footer class="w-full bg-white dark:bg-neutral-900 py-8">
+    <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-sm text-neutral-500 dark:text-neutral-400 text-center space-y-1">
+      <p>© 2025 Majo Infante</p>
 
-    <p class="text-xs text-gray-600 dark:text-neutral-400">
-      Icono de Apps Script diseñado por
-      <a href="https://www.flaticon.com/authors/freepik" class="underline hover:text-gray-600" target="_blank" rel="noopener">Freepik</a>
-      en
-      <a href="https://www.flaticon.com/" class="underline hover:text-gray-600" target="_blank" rel="noopener">Flaticon</a>.
-    </p>
+      <p class="text-xs text-gray-600 dark:text-neutral-400">
+        Icono de Apps Script diseñado por
+        <a href="https://www.flaticon.com/authors/freepik" class="underline hover:text-gray-600" target="_blank" rel="noopener">Freepik</a>
+        en
+        <a href="https://www.flaticon.com/" class="underline hover:text-gray-600" target="_blank" rel="noopener">Flaticon</a>.
+      </p>
 
-    <p class="text-xs text-gray-600 dark:text-neutral-400">
-      Basado en 
-      <a href="https://preline.co/templates/personal/index.html" rel="noopener noreferrer" target="_blank" class="hover:underline">
-        plantilla 2024
-        <span class="iconify" data-icon="lucide:external-link" aria-hidden="true" style="display: inline-block; vertical-align: middle;"></span>
-      </a>
-      por Preline Labs.
-    </p>
+      <p class="text-xs text-gray-600 dark:text-neutral-400">
+        Basado en 
+        <a href="https://preline.co/templates/personal/index.html" rel="noopener noreferrer" target="_blank" class="hover:underline">
+          plantilla 2024
+          <span class="iconify" data-icon="lucide:external-link" aria-hidden="true" style="display: inline-block; vertical-align: middle;"></span>
+        </a>
+        por Preline Labs.
+      </p>
+    </div>
   </footer>
+  <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script> 
+
+<script src="js/navbar-scroll.js"></script> 
+
 </body>
 </html>
