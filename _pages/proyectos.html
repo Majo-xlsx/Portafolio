@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Majo Infante | Proyectos</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+
+<body class="bg-gray-100 dark:bg-neutral-800 text-neutral-900 dark:text-neutral-100">
+
+  <header class="sticky top-0 w-full px-6 py-4 bg-white dark:bg-neutral-900 shadow z-50 transition-all duration-300" id="navbar">
+    <div class="max-w-2xl mx-auto flex justify-between items-center">
+      <a class="flex-none text-xl font-bold dark:text-white flex items-center" href="../index.html" aria-label="Brand">
+        <div id="profile-display" class="flex items-center space-x-4 transition-all duration-300">
+          <img id="profile-img" src="../assets/img/Majo.jpg" alt="Foto de Majo Infante" class="h-24 w-24 rounded-full object-cover transition-all duration-300">
+          <div id="name-container" class="flex flex-col items-start justify-center">
+            <span id="main-name">Majo Infante</span>
+            <span id="subtitle" class="text-sm font-normal text-gray-500 dark:text-neutral-400 transition-opacity duration-300">Matemática - Desarrolladora Java</span>
+          </div>
+        </div>
+      </a>
+
+      <nav class="space-x-4 text-sm">
+        <a href="proyectos.html" class="hover:underline">Proyectos</a>
+        <a href="../assets/pdf/Majo_CV-Generation-Julio2025.pdf" class="hover:underline" target="_blank" rel="noopener">CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-[700px] mx-auto pt-10 px-4 sm:px-6 lg:px-10 bg-white dark:bg-neutral-900 pb-8">
+
+    <section id="projects" class="mb-6">
+      <h1 class="mb-3 font-medium text-gray-800 dark:text-neutral-200 text-xl">Proyectos</h1>
+      <p class="text-sm text-gray-600 dark:text-neutral-400 mb-4">Aquí tienes algunos proyectos en los que he trabajado. Puedes ver sus repositorios en GitHub.</p>
+
+      <div class="grid grid-cols-1 gap-4">
+        <!-- Tarjeta ejemplo 1 -->
+        <div class="p-4 border border-gray-200 rounded-lg dark:border-neutral-700 hover:bg-gray-50 dark:hover:bg-neutral-800 transition">
+          <h2 class="font-semibold text-lg mb-2">Proyecto: poner proyectos 1</h2>
+          <p class="text-sm text-gray-600 dark:text-neutral-400 mb-2">Descripcion.</p>
+          <div class="flex items-center gap-3">
+            <a href="#" class="text-blue-600 dark:text-blue-400 underline">Ver repo</a>
+          </div>
+        </div>
+
+        <!-- Tarjeta ejemplo 2 -->
+        <div class="p-4 border border-gray-200 rounded-lg dark:border-neutral-700 hover:bg-gray-50 dark:hover:bg-neutral-800 transition">
+          <h2 class="font-semibold text-lg mb-2">Proyecto: poner proyectos 2</h2>
+          <p class="text-sm text-gray-600 dark:text-neutral-400 mb-2">Descripcion.</p>
+          <div class="flex items-center gap-3">
+            <a href="#" class="text-blue-600 dark:text-blue-400 underline">Ver repo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="w-full bg-white dark:bg-neutral-900 py-8">
+    <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-sm text-neutral-500 dark:text-neutral-400 text-center space-y-1">
+      <p>© 2025 Majo Infante</p>
+
+      <p class="text-xs text-gray-600 dark:text-neutral-400">
+        Iconos de Google diseñados por
+        <a href="https://www.flaticon.com/authors/freepik" class="underline hover:text-gray-600" target="_blank" rel="noopener">Freepik</a>
+        en
+        <a href="https://www.flaticon.com/" class="underline hover:text-gray-600" target="_blank" rel="noopener">Flaticon</a>.
+      </p>
+
+      <p class="text-xs text-gray-600 dark:text-neutral-400">
+        Basado en
+        <a href="https://preline.co/templates/personal/index.html" rel="noopener noreferrer" target="_blank" class="hover:underline">
+          plantilla 2024
+          <span class="iconify" data-icon="lucide:external-link" aria-hidden="true" style="display: inline-block; vertical-align: middle;"></span>
+        </a>
+        por Preline Labs.
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+  <script src="../js/navbar-scroll.js"></script>
+
+</body>
+</html>

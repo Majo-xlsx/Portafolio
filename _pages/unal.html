@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Majo Infante | Universidad Nacional</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100 dark:bg-neutral-800 text-neutral-900 dark:text-neutral-100">
+
+  <header class="sticky top-0 w-full px-6 py-4 bg-white dark:bg-neutral-900 shadow z-50 transition-all duration-300" id="navbar">
+    <div class="max-w-2xl mx-auto flex justify-between items-center">
+      <a class="flex-none text-xl font-bold dark:text-white flex items-center" href="../index.html" aria-label="Brand">
+        <div id="profile-display" class="flex items-center space-x-4 transition-all duration-300">
+          <img id="profile-img" src="../assets/img/Majo.jpg" alt="Foto de Majo Infante" class="h-24 w-24 rounded-full object-cover transition-all duration-300">
+          <div id="name-container" class="flex flex-col items-start justify-center">
+            <span id="main-name">Majo Infante</span>
+            <span id="subtitle" class="text-sm font-normal text-gray-500 dark:text-neutral-400 transition-opacity duration-300">Matemática - Desarrolladora Java</span>
+          </div>
+        </div>
+      </a>
+
+      <nav class="space-x-4 text-sm">
+        <a href="proyectos.html" class="hover:underline">Proyectos</a>
+        <a href="../assets/pdf/Majo_CV-Generation-Julio2025.pdf" class="hover:underline" target="_blank" rel="noopener">CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-[700px] mx-auto pt-10 px-4 sm:px-6 lg:px-10 bg-white dark:bg-neutral-900 pb-8">
+
+    <section id="unal" class="prose dark:prose-invert prose-sm leading-6 mb-8">
+      <h1 class="mb-3 font-medium text-gray-800 dark:text-neutral-200 text-xl">Universidad Nacional de Colombia</h1>
+
+      <div class="p-4 border border-gray-200 rounded-lg dark:border-neutral-700 flex items-start gap-4">
+        <img src="../assets/img/unal.jpg" alt="Logo UNAL" class="object-cover rounded-md" style="width: 4rem; height: 4rem;" />
+        <div>
+          <p class="mb-1 text-xs text-gray-600 dark:text-neutral-400">Agosto 2023 - Actualidad</p>
+          <h3 class="font-semibold text-sm text-gray-800 dark:text-neutral-200">Pregrado en Matemáticas</h3>
+          <p class="mt-1 text-sm text-gray-600 dark:text-neutral-400">
+            Formación en matemática pura y aplicada con enfoque en análisis estructurado de datos y modelado formal.
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-6">
+        <h2 class="text-sm font-semibold mb-2 dark:text-neutral-200">Asignaturas y proyectos relevantes</h2>
+        
+        <ul class="list-disc pl-5 text-sm text-gray-600 dark:text-neutral-400 space-y-4">
+          <li>
+            <strong>Probabilidad</strong>  
+            <p class="mt-1">Fundamentos de teoría de la probabilidad, distribuciones discretas y continuas, teoremas de probabilidad condicional, ley de los grandes números y teorema central del límite, aplicados a modelado y análisis de fenómenos aleatorios.</p>
+          </li>
+          
+          <li>
+            <strong>Estadística descriptiva y exploratoria</strong>  
+            <p class="mt-1">Medidas de tendencia central y dispersión, análisis exploratorio de datos, representación gráfica de información, identificación de patrones y valores atípicos para soporte en toma de decisiones.</p>
+          </li>
+
+          <li>
+            <strong>Estadística con R</strong>  
+            <p class="mt-1">Limpieza, transformación y visualización de datos; análisis descriptivo; pruebas de hipótesis; regresión lineal; generación de reportes reproducibles con R Markdown.</p>
+          </li>
+
+          <li>
+            <strong>Teoría de conjuntos</strong>  
+            <p class="mt-1">Operaciones y propiedades de conjuntos, relaciones y funciones, cardinalidad, teoría de relaciones y bases para el modelado relacional de bases de datos.</p>
+          </li>
+
+          <li>
+            <strong>Sistemas numéricos</strong>  
+            <p class="mt-1">Propiedades y jerarquías de los números naturales, enteros, racionales, reales y complejos; aplicaciones en modelado y resolución de problemas matemáticos.</p>
+          </li>
+
+          <li>
+            <strong>Cálculo diferencial</strong>  
+            <p class="mt-1">Límites, derivadas y aplicaciones en optimización, modelado de tasas de cambio y análisis de comportamiento de funciones.</p>
+          </li>
+
+          <li>
+            <strong>Cálculo integral</strong>  
+            <p class="mt-1">Integración indefinida y definida, técnicas de integración, aplicaciones en cálculo de áreas, volúmenes y promedios ponderados.</p>
+          </li>
+
+          <li>
+            <strong>Cálculo vectorial</strong>  
+            <p class="mt-1">Álgebra vectorial, derivadas parciales, gradiente, divergencia, rotacional e integración múltiple con aplicaciones en campos vectoriales.</p>
+          </li>
+
+          <li>
+            <strong>Ecuaciones diferenciales</strong>  
+            <p class="mt-1">Solución de ecuaciones diferenciales ordinarias y sistemas de primer y segundo orden, modelado de fenómenos físicos y poblacionales.</p>
+          </li>
+
+          <li>
+            <strong>Fundamentos de matemáticas</strong>  
+            <p class="mt-1">Estrategias de demostración matemática (inducción, contradicción, contrarrecíproco), lógica proposicional y de predicados, nociones de rigor matemático.</p>
+          </li>
+
+          <li>
+            <strong>Matemáticas discretas</strong>  
+            <p class="mt-1">Grafos, árboles, combinatoria, relaciones de recurrencia, análisis de algoritmos y estructuras discretas aplicadas en computación.</p>
+          </li>
+        </ul>
+
+        <p class="mt-5 text-sm text-gray-600 dark:text-neutral-400">
+          Estas asignaturas han fortalecido competencias en modelado lógico, razonamiento abstracto, análisis cuantitativo, programación estadística y documentación técnica. Los trabajos y proyectos se desarrollaron de forma colaborativa en Overleaf, permitiendo un manejo fluido de <strong>LaTeX</strong> para la creación de informes académicos y técnicos.
+        </p>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="w-full bg-white dark:bg-neutral-900 py-8">
+    <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-sm text-neutral-500 dark:text-neutral-400 text-center space-y-1">
+      <p>© 2025 Majo Infante</p>
+
+      <p class="text-xs text-gray-600 dark:text-neutral-400">
+        Iconos de Google diseñados por
+        <a href="https://www.flaticon.com/authors/freepik" class="underline hover:text-gray-600" target="_blank" rel="noopener">Freepik</a>
+        en
+        <a href="https://www.flaticon.com/" class="underline hover:text-gray-600" target="_blank" rel="noopener">Flaticon</a>.
+      </p>
+
+      <p class="text-xs text-gray-600 dark:text-neutral-400">
+        Basado en
+        <a href="https://preline.co/templates/personal/index.html" rel="noopener noreferrer" target="_blank" class="hover:underline">
+          plantilla 2024
+          <span class="iconify" data-icon="lucide:external-link" aria-hidden="true" style="display: inline-block; vertical-align: middle;"></span>
+        </a>
+        por Preline Labs.
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+  <script src="../js/navbar-scroll.js"></script>
+
+</body>
+</html>

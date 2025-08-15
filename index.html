@@ -35,8 +35,8 @@
           </a>
           
           <nav class="space-x-4 text-sm">
-            <a href="_pages/portafolio.html" class="hover:underline">Proyectos</a>
-            <a href="majo-cv.pdf" class="hover:underline" target="_blank" rel="noopener">CV</a>
+            <a href="_pages/proyectos.html" class="hover:underline">Proyectos</a>
+            <a href="assets/pdf/Majo_CV-Generation-Julio2025.pdf" class="hover:underline" target="_blank" rel="noopener">CV</a>
           </nav>
         </div>
     </header>
@@ -145,11 +145,87 @@
       </div>
     </section>
 
+    <!-- ============== EXPERIENCIA LABORAL ============== -->
+    <section id="experience" class="mt-10 sm:mt-14 scroll-mt-28">
+      <h2 class="mb-5 font-medium text-gray-800 dark:text-neutral-200 text-lg">Experiencia laboral</h2>
+
+      <div class="space-y-5">
+        <!-- Capital Humano -->
+        <div class="group relative flex gap-x-5">
+          <!-- Icon -->
+          <div class="relative group-last:after:hidden after:absolute after:top-8 after:bottom-2 after:start-3 after:w-px after:translate-x-[0.5px] after:bg-gray-200 dark:after:bg-neutral-700">
+            <div class="relative z-10 size-6 flex justify-center items-center">
+              <span class="iconify text-gray-600 dark:text-neutral-400" data-icon="mdi:briefcase-variant" style="font-size:1.25rem;"></span>
+            </div>
+          </div>
+          <!-- End Icon -->
+
+          <!-- Right Content -->
+          <div class="grow pb-8 group-last:pb-0">
+            <h3 class="mb-1 text-xs text-gray-600 dark:text-neutral-400">2023 – Presente</h3>
+            <p class="font-semibold text-sm text-gray-800 dark:text-neutral-200">Analista de datos · Capital Humano</p>
+            <p class="mt-1 text-sm text-gray-600 dark:text-neutral-400">
+              Automatización de procesos · Datos · Herramientas Google
+            </p>
+            <p class="mt-1 text-sm text-gray-600 dark:text-neutral-400">
+              Diseñé e implementé una base de datos relacional en PostgreSQL para la gestión de personal, aplicando principios de teoría de conjuntos y normalización (hasta 3FN) para mantener integridad y consistencia en más de 800 registros activos e históricos.<br>
+              Migré estructuras y datos entre sistemas (
+                <span class="inline-flex items-center gap-1 px-2 py-1 border rounded-md text-xs bg-white dark:bg-neutral-900 border-gray-300 dark:border-neutral-700 shadow-sm align-middle">
+                  <img src="https://cdn-icons-png.flaticon.com/512/281/281761.png" alt="Google Sheets" style="width:1rem;height:1rem;">
+                  Google Sheets
+                </span>
+                &nbsp;→&nbsp;
+                <span class="inline-flex items-center gap-1 px-2 py-1 border rounded-md text-xs bg-white dark:bg-neutral-900 border-gray-300 dark:border-neutral-700 shadow-sm align-middle">
+                  <img src="https://cdn-icons-png.flaticon.com/512/14665/14665616.png" alt="Cloud SQL" style="width:1rem;height:1rem;">
+                  Cloud SQL
+                </span>
+              ), asegurando integridad referencial mediante llaves primarias y foráneas, con validaciones previas escritas en SQL.<br>
+              Automatización de procesos rutinarios mediante
+              <span class="inline-flex items-center gap-1 px-2 py-1 border rounded-md text-xs bg-white dark:bg-neutral-900 border-gray-300 dark:border-neutral-700 shadow-sm align-middle">
+                <img src="https://cdn-icons-png.flaticon.com/512/2965/2965300.png" alt="Apps Script" style="width:1rem;height:1rem;">
+                Google Apps Script
+              </span>,
+              incluyendo consolidación de datos, envío de alertas automatizadas y generación de reportes diarios y mensuales.
+            </p>
+          </div>
+          <!-- End Right Content -->
+        </div>
+        <!-- End Capital Humano -->
+
+        <!-- Concentrix -->
+        <div class="group relative flex gap-x-5">
+          <!-- Icon -->
+          <div class="relative group-last:after:hidden after:absolute after:top-8 after:bottom-2 after:start-3 after:w-px after:translate-x-[0.5px] after:bg-gray-200 dark:after:bg-neutral-700">
+            <div class="relative z-10 size-6 flex justify-center items-center">
+              <span class="iconify text-gray-600 dark:text-neutral-400" data-icon="mdi:headset" style="font-size:1.25rem;"></span>
+            </div>
+          </div>
+          <!-- End Icon -->
+
+          <!-- Right Content -->
+          <div class="grow pb-8 group-last:pb-0">
+            <h3 class="mb-1 text-xs text-gray-600 dark:text-neutral-400">2021 – 2022</h3>
+            <p class="font-semibold text-sm text-gray-800 dark:text-neutral-200">Customer Support · Concentrix</p>
+            <p class="mt-1 text-sm text-gray-600 dark:text-neutral-400">
+              Atención multicanal · Gestión de casos
+            </p>
+            <p class="mt-1 text-sm text-gray-600 dark:text-neutral-400">
+              Atención telefónica en inglés a clientes de EE. UU. sobre productos bancarios.<br>
+              Desarrollo de habilidades en multitarea, manejo de CRM y documentación simultánea.<br>
+              Fortalecimiento de la fluidez en inglés, comunicación empática y gestión de clientes difíciles.
+            </p>
+          </div>
+          <!-- End Right Content -->
+        </div>
+        <!-- End Concentrix -->
+      </div>
+    </section>
+    <!-- ============ FIN EXPERIENCIA LABORAL ============ -->
+
     <section class="mt-10 sm:mt-14 scroll-mt-28" id="edu">
       <h2 class="mb-3 font-medium text-gray-800 dark:text-neutral-200 text-lg">Educación</h2>
       <div class="grid grid-cols-1 gap-3">
-
-        <div class="p-4 border border-gray-200 rounded-lg dark:border-neutral-700">
+        <a href="_pages/generation.html" class="p-4 border border-gray-200 rounded-lg dark:border-neutral-700 flex items-start gap-3 hover:bg-gray-50 dark:hover:bg-neutral-800 transition">
           <div class="flex items-center gap-4">
             <img src="assets/img/gen.png" alt="Logo Generation"
                 class="object-cover rounded-md"
@@ -166,14 +242,14 @@
               </p>
             </div>
           </div>
-        </div>
+        </a>
 
-        <div class="p-4 border border-gray-200 rounded-lg dark:border-neutral-700 flex items-start gap-3">
+        <a href="_pages/unal.html" class="p-4 border border-gray-200 rounded-lg dark:border-neutral-700 flex items-start gap-3 hover:bg-gray-50 dark:hover:bg-neutral-800 transition">
           <img src="assets/img/unal.jpg" alt="Logo UNAL"
               class="object-cover rounded-md"
               style="width: 4rem; height: 4rem;"/>
           <div>
-            <p class="mb-1 text-xs text-gray-600 dark:text-neutral-400">Ago 2023 - Actualidad</p>
+            <p class="mb-1 text-xs text-gray-600 dark:text-neutral-400">Agosto 2023 - Actualidad</p>
             <h3 class="font-semibold text-sm text-gray-800 dark:text-neutral-200">
               Pregrado en Matemáticas
             </h3>
@@ -181,7 +257,7 @@
               Universidad Nacional de Colombia
             </p>
           </div>
-        </div>
+        </a>
 
         <div class="p-4 border border-gray-200 rounded-lg dark:border-neutral-700">
           <hgroup>
@@ -293,7 +369,7 @@
       <p>© 2025 Majo Infante</p>
 
       <p class="text-xs text-gray-600 dark:text-neutral-400">
-        Icono de Apps Script diseñado por
+        Iconos de Google diseñados por
         <a href="https://www.flaticon.com/authors/freepik" class="underline hover:text-gray-600" target="_blank" rel="noopener">Freepik</a>
         en
         <a href="https://www.flaticon.com/" class="underline hover:text-gray-600" target="_blank" rel="noopener">Flaticon</a>.
