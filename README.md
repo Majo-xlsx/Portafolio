@@ -10,13 +10,15 @@ Este es mi portafolio profesional desarrollado con HTML, CSS y un poco de JavaSc
 
 ```
 /
-├── index.html                 # Página principal
+├── index.html                # Página principal
 ├── _pages/
-│   ├── about.html            # Sobre mí
-│   ├── portafolio.html       # Proyectos
-│   └── cv.html               # Hoja de vida
+│   ├── generation.html       # Estudios Java
+│   ├── proyectos.html        # Proyectos
+│   └── unal.html             # Estudios universidad
 ├── assets/
-│   └── img/                  # Imágenes del sitio
+│   ├── js/                   # Scroll
+│   ├── img/                  # Imágenes
+│   └── pdf/                  # CV
 └── README.md                 # Este archivo
 ```
 
@@ -26,6 +28,7 @@ Este es mi portafolio profesional desarrollado con HTML, CSS y un poco de JavaSc
 
 - HTML5  
 - CSS3  
-- JavaScript (mínimo)  
+- JavaScript  
 - Iconos de [Iconify](https://icon-sets.iconify.design/)  
-- Diseño responsivo con Flexbox y utilidades tipo Tailwind
+- Utilidades de Tailwind CSS (via CDN) y componentes de Flowbite  
+- Diseño responsivo con Flexbox
